@@ -1,0 +1,655 @@
+/* ===== Services Overview ===== */
+.serviceContainer {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #0a0e14;
+  z-index: -1;
+  padding-bottom: 5rem;
+}
+
+.subServiceContainer {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.serviceTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.serviceDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #94a3b8;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.cardContainer {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subCardContainer {
+  width: 22rem;
+  background-color: #101725;
+  border-radius: 1rem;
+  border: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.subCardContainer:hover {
+  transform: translateY(-6px);
+  border-color: #4f8cff;
+  box-shadow: 0 8px 30px rgba(79, 140, 255, 0.15);
+}
+
+.iconContainer {
+  margin-bottom: 1rem;
+}
+
+.subIconContainer {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(135deg, #4f8cff, #6c5ce7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.subIconContainer svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardTitle {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem 0;
+}
+
+.cardDescription {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.tag {
+  background-color: rgba(79, 140, 255, 0.1);
+  color: #4f8cff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(79, 140, 255, 0.2);
+}
+
+/* ===== Shared Section Styles ===== */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.sectionTitle {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem 0;
+}
+
+.sectionSubtitle {
+  color: #94a3b8;
+  font-size: 1.15rem;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Detailed Service Sections ===== */
+.detailedServicesContainer {
+  background-color: #0a0e14;
+  padding: 5rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.detailedServicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.detailedServiceItem {
+  background-color: #101725;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.detailedServiceItem:hover {
+  border-color: #4f8cff;
+}
+
+.detailedServiceContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailedServiceIcon {
+  margin-bottom: 1.2rem;
+}
+
+.detailedServiceTitle {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem 0;
+}
+
+.detailedServiceDesc {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+}
+
+.featuresHeading {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.8rem 0;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.featureItem {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.featureCheck {
+  width: 1rem;
+  height: 1rem;
+  color: #4f8cff;
+  flex-shrink: 0;
+}
+
+.detailedServiceTech {
+  margin-bottom: 1.5rem;
+}
+
+.techPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techPill {
+  background-color: rgba(108, 92, 231, 0.1);
+  color: #a78bfa;
+  font-size: 0.78rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(108, 92, 231, 0.25);
+}
+
+.learnMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid #4f8cff;
+  color: #4f8cff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-self: flex-start;
+}
+
+.learnMoreBtn:hover {
+  background-color: #4f8cff;
+  color: #ffffff;
+}
+
+.learnMoreArrow {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* ===== How We Work (Process) ===== */
+.processContainer {
+  background-color: #0d1117;
+  padding: 5rem 2rem;
+}
+
+.processTimeline {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.processStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.processStepNumber {
+  color: #4f8cff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  min-width: 2.5rem;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+
+.processStepLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  position: relative;
+}
+
+.processStepDot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f8cff, #6c5ce7);
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+  box-shadow: 0 0 12px rgba(79, 140, 255, 0.4);
+}
+
+.processStepConnector {
+  width: 2px;
+  flex: 1;
+  min-height: 3rem;
+  background: linear-gradient(to bottom, #4f8cff, rgba(79, 140, 255, 0.1));
+}
+
+.processStepContent {
+  padding-bottom: 2.5rem;
+  flex: 1;
+}
+
+.processStepTitle {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.processStepDesc {
+  color: #94a3b8;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Why Choose Us (Benefits) ===== */
+.benefitsContainer {
+  background-color: #0a0e14;
+  padding: 5rem 2rem;
+}
+
+.benefitsGrid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
+.benefitCard {
+  background-color: #101725;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-4px);
+  border-color: #4f8cff;
+}
+
+.benefitIcon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  color: #4f8cff;
+}
+
+.benefitIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.benefitTitle {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.benefitDesc {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Technologies We Use ===== */
+.techStackContainer {
+  background-color: #0d1117;
+  padding: 5rem 2rem;
+}
+
+.techStackGrid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 2rem;
+}
+
+.techStackCategory {
+  background-color: #101725;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  padding: 1.8rem;
+}
+
+.techStackCategoryTitle {
+  color: #4f8cff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1.2rem 0;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(79, 140, 255, 0.15);
+}
+
+.techStackItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.techStackItem {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.techStackDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f8cff, #6c5ce7);
+  flex-shrink: 0;
+}
+
+/* ===== Case Studies ===== */
+.caseStudiesContainer {
+  background-color: #0a0e14;
+  padding: 5rem 2rem 6rem;
+}
+
+.caseStudiesGrid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.caseStudyCard {
+  background-color: #101725;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.caseStudyCard:hover {
+  transform: translateY(-4px);
+  border-color: #6c5ce7;
+}
+
+.caseStudyNumber {
+  color: rgba(79, 140, 255, 0.25);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.caseStudyTitle {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1.2rem 0;
+}
+
+.caseStudySection {
+  margin-bottom: 1rem;
+}
+
+.caseStudyLabel {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.4rem;
+  background-color: rgba(79, 140, 255, 0.1);
+  color: #4f8cff;
+}
+
+.caseStudyLabel--outcome {
+  background-color: rgba(52, 211, 153, 0.1);
+  color: #34d399;
+}
+
+.caseStudyText {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0.4rem 0 0 0;
+}
+
+.caseStudyTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .detailedServicesContainer,
+  .processContainer,
+  .benefitsContainer,
+  .techStackContainer,
+  .caseStudiesContainer {
+    padding: 4rem 1.5rem;
+  }
+
+  .serviceTitleContainer {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .serviceTitleContainer {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .serviceDescription {
+    font-size: 1rem;
+  }
+
+  .cardContainer {
+    gap: 1rem;
+  }
+
+  .subCardContainer {
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .featuresList {
+    grid-template-columns: 1fr;
+  }
+
+  .detailedServiceItem {
+    padding: 1.8rem;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .caseStudiesGrid {
+    grid-template-columns: 1fr;
+    max-width: 32rem;
+  }
+
+  .techStackGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .serviceTitleContainer {
+    font-size: 1.75rem;
+  }
+
+  .subCardContainer {
+    padding: 1.4rem;
+    max-width: 100%;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .detailedServicesContainer,
+  .processContainer,
+  .benefitsContainer,
+  .techStackContainer,
+  .caseStudiesContainer {
+    padding: 3rem 1rem;
+  }
+
+  .detailedServiceItem {
+    padding: 1.25rem;
+  }
+
+  .detailedServiceTitle {
+    font-size: 1.35rem;
+  }
+
+  .processStep {
+    gap: 1rem;
+  }
+
+  .processStepNumber {
+    display: none;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .techStackGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardContainer {
+    padding: 0 1rem;
+  }
+
+  .learnMoreBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

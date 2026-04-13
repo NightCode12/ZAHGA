@@ -1,0 +1,871 @@
+/* ===========================
+   Company Page
+   =========================== */
+#company {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  color: #fff;
+}
+
+.companySection {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* ===== Shared section headers reused from services.css ===== */
+.companySection .sectionHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.companySection .sectionTitle {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem 0;
+}
+
+.companySection .sectionSubtitle {
+  color: #94a3b8;
+  font-size: 1.15rem;
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+/* ===== Intro / About Us ===== */
+.companyIntro {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 4rem;
+}
+
+.companyIntroTag {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #4f8cff;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid rgba(79, 140, 255, 0.3);
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.companyIntroTitle {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 1.25rem;
+  background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.companyIntroDesc {
+  color: #94a3b8;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===== Stats row ===== */
+.companyStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.companyStatCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.75rem 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.companyStatCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(79, 140, 255, 0.3);
+}
+
+.companyStatValue {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.companyStatLabel {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+/* ===== Values ===== */
+.companyValuesHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.companyValuesTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+
+.companyValuesSubtitle {
+  color: #94a3b8;
+  margin: 0;
+}
+
+.companyValuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.companyValueCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.companyValueCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(79, 140, 255, 0.3);
+}
+
+.companyValueIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(79, 140, 255, 0.12);
+  color: #4f8cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.companyValueIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.companyValueTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+
+.companyValueDesc {
+  color: #94a3b8;
+  font-size: 0.925rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Teams ===== */
+.companyTeamsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.companyTeamCard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.75rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.companyTeamCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(79, 140, 255, 0.3);
+}
+
+.companyTeamBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #4f8cff;
+  background: rgba(79, 140, 255, 0.1);
+  border: 1px solid rgba(79, 140, 255, 0.25);
+  padding: 0.25rem 0.65rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.companyTeamName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+
+.companyTeamDesc {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Meet the Team ===== */
+.companyMembersHeader {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.companyMembersTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.65rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #fff 0%, #c7d2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.companyMembersSubtitle {
+  color: #94a3b8;
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.companyMembersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.5rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.companyMemberCard {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.015) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 2rem 1.25rem 1.5rem;
+  text-align: center;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+  overflow: hidden;
+  isolation: isolate;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.companyMemberCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--member-grad, linear-gradient(135deg, #4f8cff, #6c5ce7));
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.companyMemberCard:hover {
+  transform: translateY(-6px);
+  border-color: transparent;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow:
+    0 20px 45px -15px rgba(79, 140, 255, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.companyMemberCard:hover::before {
+  opacity: 1;
+}
+
+.companyMemberGlow {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 140px;
+  background: var(--member-grad, linear-gradient(135deg, #4f8cff, #6c5ce7));
+  filter: blur(60px);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.companyMemberCard:hover .companyMemberGlow {
+  opacity: 0.45;
+}
+
+.companyMemberPhotoRing {
+  position: relative;
+  width: 108px;
+  height: 108px;
+  margin: 0 auto 1.1rem;
+  border-radius: 50%;
+  padding: 3px;
+  background: var(--member-grad, linear-gradient(135deg, #4f8cff, #6c5ce7));
+  box-shadow: 0 8px 28px -6px rgba(79, 140, 255, 0.35);
+  z-index: 2;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.companyMemberCard:hover .companyMemberPhotoRing {
+  transform: scale(1.05) rotate(-3deg);
+}
+
+.companyMemberPhotoWrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--member-grad, linear-gradient(135deg, #4f8cff, #6c5ce7));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #0b1120;
+  position: relative;
+}
+
+.companyMemberPhotoWrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 55%);
+  pointer-events: none;
+}
+
+.companyMemberPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.companyMemberInitials {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.companyMemberStatus {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #22c55e;
+  border: 3px solid #0b1120;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.25);
+  animation: companyMemberPulse 2.4s ease-out infinite;
+}
+
+@keyframes companyMemberPulse {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.25); }
+  50%      { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.05); }
+}
+
+.companyMemberName {
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0.3rem;
+  letter-spacing: -0.01em;
+  z-index: 2;
+}
+
+.companyMemberRole {
+  position: relative;
+  color: #94a3b8;
+  font-size: 0.83rem;
+  margin: 0;
+  z-index: 2;
+}
+
+.companyMemberDivider {
+  width: 28px;
+  height: 2px;
+  margin: 1rem auto 0.85rem;
+  border-radius: 2px;
+  background: var(--member-grad, linear-gradient(135deg, #4f8cff, #6c5ce7));
+  opacity: 0.55;
+  transition: width 0.4s ease, opacity 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.companyMemberCard:hover .companyMemberDivider {
+  width: 48px;
+  opacity: 1;
+}
+
+.companyMemberSocials {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.companyMemberCard:hover .companyMemberSocials {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.companyMemberSocial {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c7d2fe;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.companyMemberSocial svg {
+  width: 14px;
+  height: 14px;
+}
+
+.companyMemberSocial:hover {
+  background: var(--member-grad, linear-gradient(135deg, #4f8cff, #6c5ce7));
+  color: #fff;
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+/* ===== Careers ===== */
+.companyCareersList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.companyCareerCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.companyCareerCard:hover {
+  border-color: rgba(79, 140, 255, 0.3);
+  background: rgba(79, 140, 255, 0.04);
+}
+
+.companyCareerInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.companyCareerTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0.4rem;
+}
+
+.companyCareerMeta {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.companyCareerDot {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.companyCareerTags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.companyCareerTags .tag {
+  background: rgba(79, 140, 255, 0.08);
+  color: #4f8cff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(79, 140, 255, 0.2);
+}
+
+.companyCareerApply {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #4f8cff, #6c5ce7);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  flex-shrink: 0;
+}
+
+.companyCareerApply:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(79, 140, 255, 0.35);
+}
+
+.companyCareerApply svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ===== Projects ===== */
+.companyProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.companyProjectCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.companyProjectCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(79, 140, 255, 0.3);
+}
+
+.companyProjectCategory {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6c5ce7;
+  background: rgba(108, 92, 231, 0.1);
+  border: 1px solid rgba(108, 92, 231, 0.25);
+  padding: 0.3rem 0.7rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.companyProjectTitle {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0.6rem;
+}
+
+.companyProjectDesc {
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+}
+
+.companyProjectTags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.companyProjectTags .tag {
+  background: rgba(79, 140, 255, 0.08);
+  color: #4f8cff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(79, 140, 255, 0.2);
+}
+
+/* ===== Testimonials ===== */
+.companyTestimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.companyTestimonialCard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem 1.75rem 1.75rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.companyTestimonialCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(79, 140, 255, 0.3);
+}
+
+.companyTestimonialQuote {
+  width: 32px;
+  height: 32px;
+  color: rgba(79, 140, 255, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.companyTestimonialQuoteText {
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0 0 1.5rem;
+}
+
+.companyTestimonialAuthor {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.companyTestimonialAvatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f8cff, #6c5ce7);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.companyTestimonialName {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.925rem;
+}
+
+.companyTestimonialRole {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+/* ===== CTA ===== */
+.companyCtaWrap {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.companyCta {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #4f8cff, #6c5ce7);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.companyCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(79, 140, 255, 0.4);
+}
+
+/* Shared tag style fallback */
+.companySection .tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2rem;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 1024px) {
+  .companySection {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .companyTestimonialsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .companyStats,
+  .companyValuesGrid,
+  .companyTeamsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .companyProjectsGrid,
+  .companyTestimonialsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .companySection .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .companyValuesTitle,
+  .companyMembersTitle {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #company {
+    padding-top: 6rem;
+  }
+
+  .companySection {
+    padding: 2.5rem 1rem;
+  }
+
+  .companyIntro {
+    margin-bottom: 2.5rem;
+  }
+
+  .companyIntroDesc {
+    font-size: 1rem;
+  }
+
+  .companyStats,
+  .companyValuesGrid,
+  .companyTeamsGrid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    margin-bottom: 3rem;
+  }
+
+  .companyStatCard,
+  .companyValueCard,
+  .companyTeamCard {
+    padding: 1.4rem 1.25rem;
+  }
+
+  .companyCareerCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem;
+  }
+
+  .companyCareerApply {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .companySection .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .companySection .sectionSubtitle {
+    font-size: 1rem;
+  }
+
+  .companyProjectCard,
+  .companyTestimonialCard {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .companyMembersGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+  }
+
+  .companyMemberCard {
+    padding: 1.5rem 0.85rem 1.25rem;
+    border-radius: 14px;
+  }
+
+  .companyMemberPhotoRing {
+    width: 86px;
+    height: 86px;
+    margin-bottom: 0.9rem;
+  }
+
+  .companyMemberStatus {
+    width: 13px;
+    height: 13px;
+    right: 4px;
+    bottom: 4px;
+    border-width: 2px;
+  }
+
+  .companyMemberInitials {
+    font-size: 1.4rem;
+  }
+
+  .companyMemberName {
+    font-size: 0.95rem;
+  }
+
+  /* Keep socials visible on touch devices where hover isn't available */
+  .companyMemberSocials {
+    opacity: 1;
+    transform: none;
+  }
+
+  .companyMemberSocial {
+    width: 28px;
+    height: 28px;
+  }
+
+  .companyMemberSocial svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .companyCta {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 1.5rem;
+  }
+}

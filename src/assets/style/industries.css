@@ -1,0 +1,458 @@
+.industriesContainer {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #0a0e14;
+  z-index: -1;
+  padding-bottom: 5rem;
+}
+
+.hero__bg{
+}
+
+.subindustriesContainer {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.industriesTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.industriesDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #94a3b8;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.cardContainer {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subCardContainer {
+  width: 22rem;
+  background-color: #101725;
+  border-radius: 1rem;
+  border: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.subCardContainer:hover {
+  transform: translateY(-6px);
+  border-color: #4f8cff;
+  box-shadow: 0 8px 30px rgba(79, 140, 255, 0.15);
+}
+
+.iconContainer {
+  margin-bottom: 1rem;
+}
+
+.subIconContainer {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(135deg, #4f8cff, #6c5ce7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.subIconContainer svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardTitle {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem 0;
+}
+
+.cardDescription {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.tag {
+  background-color: rgba(79, 140, 255, 0.1);
+  color: #4f8cff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(79, 140, 255, 0.2);
+}
+
+/* ===== Solutions Across Industries ===== */
+.solutionsSection {
+  background-color: #0d1117;
+}
+
+.solutionsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.indSectionTitle {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem 0;
+}
+
+.indSectionSubtitle {
+  color: #94a3b8;
+  font-size: 1.15rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.solutionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
+.solutionCard {
+  background-color: #101725;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.solutionCard:hover {
+  transform: translateY(-4px);
+  border-color: #4f8cff;
+}
+
+.solutionIcon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  color: #4f8cff;
+}
+
+.solutionIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.solutionTitle {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.solutionDesc {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Why Industry Expertise Matters ===== */
+.expertiseSection {
+  background-color: #0a0e14;
+}
+
+.expertiseContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.expertiseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.5rem;
+}
+
+.expertiseCard {
+  background-color: #101725;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.expertiseCard:hover {
+  transform: translateY(-4px);
+  border-color: #6c5ce7;
+}
+
+.expertiseIcon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  color: #6c5ce7;
+}
+
+.expertiseIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.expertiseCardTitle {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.expertiseCardDesc {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Case Studies ===== */
+.caseStudiesSection {
+  background-color: #0d1117;
+}
+
+.indCaseStudiesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem 6rem;
+}
+
+.indCaseStudiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.indCaseStudyCard {
+  background-color: #101725;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.indCaseStudyCard:hover {
+  transform: translateY(-4px);
+  border-color: #6c5ce7;
+}
+
+.indCaseStudyBadge {
+  display: inline-block;
+  background: linear-gradient(135deg, #4f8cff, #6c5ce7);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.indCaseStudyTitle {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1.2rem 0;
+}
+
+.indCaseStudySection {
+  margin-bottom: 1rem;
+}
+
+.indCaseStudyLabel {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.4rem;
+  background-color: rgba(79, 140, 255, 0.1);
+  color: #4f8cff;
+}
+
+.indCaseStudyLabel--outcome {
+  background-color: rgba(52, 211, 153, 0.1);
+  color: #34d399;
+}
+
+.indCaseStudyText {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0.4rem 0 0 0;
+}
+
+.indCaseStudyTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.ctaContainer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.indCtaButton {
+  display: inline-block;
+  background: linear-gradient(135deg, #4f8cff, #6c5ce7);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.85rem 2.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.indCtaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 140, 255, 0.3);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .solutionsContainer,
+  .expertiseContainer,
+  .indCaseStudiesContainer {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .industriesTitleContainer {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .industriesDescription {
+    font-size: 1rem;
+  }
+
+  .cardContainer {
+    gap: 1rem;
+  }
+
+  .subCardContainer {
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  .indSectionTitle {
+    font-size: 2rem;
+  }
+
+  .indSectionSubtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .solutionsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .expertiseGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .indCaseStudiesGrid {
+    grid-template-columns: 1fr;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .industriesTitleContainer {
+    font-size: 1.75rem;
+  }
+
+  .subCardContainer {
+    padding: 1.4rem;
+    max-width: 100%;
+  }
+
+  .indSectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .solutionsContainer,
+  .expertiseContainer,
+  .indCaseStudiesContainer {
+    padding: 3rem 1rem;
+  }
+
+  .solutionsGrid,
+  .expertiseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardContainer {
+    padding: 0 1rem;
+  }
+
+  .indCtaButton {
+    width: 100%;
+    text-align: center;
+    padding: 0.85rem 1.5rem;
+  }
+}
