@@ -457,10 +457,4 @@ a{
     font-size: 0.7rem;
     padding: 0.35rem 0.8rem;
   }
-
-  .hero__stats{
-    display: flex;
-    flex-direction: column;
-    outline: red dashed 1px;
-  }
 }
